@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/btn_send_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送文件"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="169dp"
+        android:layout_above="@+id/btn_send_msg"
+        android:layout_alignStart="@+id/btn_send_msg" />
+
+    <Button
+        android:id="@+id/btn_send_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送消息"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="169dp"
+        android:layout_above="@+id/btn_connect"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接服务器"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="169dp"
+        android:layout_above="@+id/btn_close"
+        android:layout_alignEnd="@+id/btn_close"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭连接"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="169dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_send_file"
+        android:layout_marginBottom="72dp" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="name"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+</RelativeLayout>
